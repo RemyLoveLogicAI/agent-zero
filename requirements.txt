@@ -32,3 +32,4 @@ unstructured==0.15.13
 unstructured-client==0.25.9
 webcolors==24.6.0
 crontab==1.0.1
+yt-dlp==2025.7.21
