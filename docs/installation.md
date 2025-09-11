@@ -58,7 +58,7 @@ The following user guide provides instructions for installing and running Agent 
 
 2. **Run Agent Zero:**
 
-- Note: Agent Zero also offers a Hacking Edition based on Kali linux with modified prompts for cybersecurity tasks. The setup is the same as the regular version, just use the frdel/agent-zero-run:hacking image instead of frdel/agent-zero-run.
+  *For the Kali-based variant see [Hacking Edition](hacking.md).*
 
 2.1. Pull the Agent Zero Docker image:
 - Search for `frdel/agent-zero-run` in Docker Desktop
