@@ -6,7 +6,7 @@
 
 [Introduction](#a-personal-organic-agentic-framework-that-grows-and-learns-with-you) •
 [Installation](./docs/installation.md) •
-[Hacking Edition](#hacking-edition) •
+[Hacking Edition](docs/hacking.md) •
 [How to update](./docs/installation.md#how-to-update-agent-zero) •
 [Documentation](./docs/README.md) •
 [Usage](./docs/usage.md)
@@ -83,8 +83,14 @@
 - **Research** - `"Gather and summarize five recent AI papers about CoT prompting"`
 
 # Hacking Edition
-- Agent Zero also offers a Hacking Edition based on Kali linux with modified prompts for cybersecurity tasks
-- The setup is the same as the regular version, just use the frdel/agent-zero-run:hacking image instead of frdel/agent-zero-run
+Agent Zero provides an optional Docker image based on Kali Linux for security research.
+
+```bash
+docker pull frdel/agent-zero-run:hacking
+docker run -p 50001:80 frdel/agent-zero-run:hacking
+```
+
+See [docs/hacking.md](docs/hacking.md) for details.
 
 
 # ⚙️ Installation
@@ -105,6 +111,17 @@ docker run -p 50001:80 frdel/agent-zero-run
 
 # Visit http://localhost:50001 to start
 ```
+
+### Local UI Setup
+
+You can also run the Web UI directly without Docker:
+
+```bash
+pip install -r requirements.txt
+python app_init.py
+```
+
+Open `http://127.0.0.1:50001` in your browser once the server starts.
 
 ## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
