@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_RemyLoveLogicAI_agent_zero_1782009567517-push-trigger-input-set
+  identifier: Build_RemyLoveLogicAI_agent_zero_1782009567517pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_RemyLoveLogicAI_agent_zero_1782009567517
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
